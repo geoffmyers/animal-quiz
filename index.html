@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal Identification Quiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loading-overlay">
+  <div class="spinner"></div>
+  <div style="color: #888; font-weight: 600;">Loading...</div>
+</div>
+
+<!-- START SCREEN -->
+<div id="start-screen">
+  <h1>Animal Identification Quiz</h1>
+  <p class="subtitle" id="subtitle">Can you identify these animals from around the world?</p>
+
+  <div class="category-cards">
+    <div class="category-card selected" data-category="foxes">
+      <div class="category-icon">&#129418;</div>
+      <div class="category-name">Foxes</div>
+      <div class="category-count" id="cat-count-foxes">24 species</div>
+    </div>
+    <div class="category-card" data-category="cats">
+      <div class="category-icon">&#128049;</div>
+      <div class="category-name">Cats</div>
+      <div class="category-count" id="cat-count-cats">55 breeds</div>
+    </div>
+    <div class="category-card" data-category="dogs">
+      <div class="category-icon">&#128054;</div>
+      <div class="category-name">Dogs</div>
+      <div class="category-count" id="cat-count-dogs">73 breeds</div>
+    </div>
+  </div>
+
+  <p class="species-count" id="species-count"></p>
+
+  <div class="mode-cards">
+    <div class="mode-card selected" data-mode="8">
+      <div class="mode-icon">&#128065;</div>
+      <div class="mode-name">Quick Sighting</div>
+      <div class="mode-desc">8 questions</div>
+    </div>
+    <div class="mode-card" data-mode="16">
+      <div class="mode-icon">&#128270;</div>
+      <div class="mode-name">Field Study</div>
+      <div class="mode-desc">16 questions</div>
+    </div>
+    <div class="mode-card" data-mode="0">
+      <div class="mode-icon">&#128218;</div>
+      <div class="mode-name">Full Taxonomy</div>
+      <div class="mode-desc" id="full-tax-desc">All species</div>
+    </div>
+  </div>
+
+  <button class="start-btn" id="start-btn">Start Quiz</button>
+
+  <div class="footer-credits">
+    Photos from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia</a> by many photographers, under their own licences &middot; <a href="credits.html">Image credits</a><br>
+    Type set in <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener">Inter</a> &middot; SIL Open Font License<br>
+    Quiz by <a href="https://www.geoffmyers.com" target="_blank">Geoff Myers</a> &middot; built with plain HTML, CSS and JavaScript
+  </div>
+</div>
+
+<!-- QUIZ SCREEN -->
+<div id="quiz-screen">
+  <div class="top-bar">
+    <div class="score-display">
+      <span class="correct" id="score-correct">0</span>
+      <span class="wrong" id="score-wrong">0</span>
+      <span class="streak" id="score-streak">&#128293; 0</span>
+    </div>
+    <div class="progress-text" id="progress-text">1 / 8</div>
+    <button class="quit-btn" id="quit-btn">Quit</button>
+  </div>
+
+  <div class="quiz-body">
+    <div class="timer-bar-track" id="timer-track">
+      <div class="timer-bar-fill" id="timer-fill"></div>
+    </div>
+
+    <div class="image-container">
+      <div class="image-placeholder" id="img-placeholder">Loading...</div>
+      <img id="quiz-image" class="loading" alt="Mystery animal" />
+    </div>
+
+    <div class="question-label" id="question-label">What species of fox is this?</div>
+
+    <div class="choices" id="choices"></div>
+
+    <div class="feedback" id="feedback"></div>
+    <div class="feedback-detail" id="feedback-detail"></div>
+
+    <div class="next-container" id="next-container"></div>
+
+    <div class="keyboard-hint">
+      <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd> to answer &middot;
+      <kbd>Enter</kbd> or <kbd>Space</kbd> for next
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS SCREEN -->
+<div id="results-screen">
+  <div class="results-card">
+    <h2 id="results-title">Well done!</h2>
+    <p class="result-subtitle" id="results-subtitle"></p>
+    <div class="big-score" id="results-percent">0%</div>
+    <div class="big-score-label">accuracy</div>
+    <div class="stats-row">
+      <div class="stat-item green">
+        <div class="stat-value" id="results-correct">0</div>
+        <div class="stat-label">Correct</div>
+      </div>
+      <div class="stat-item red">
+        <div class="stat-value" id="results-wrong">0</div>
+        <div class="stat-label">Wrong</div>
+      </div>
+      <div class="stat-item gold">
+        <div class="stat-value" id="results-streak">0</div>
+        <div class="stat-label">Best Streak</div>
+      </div>
+    </div>
+    <div class="results-actions">
+      <button class="play-again" id="play-again-btn">Play Again</button>
+      <button class="back-btn" id="back-btn">Back to Menu</button>
+    </div>
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+[
+  {
+    "name": "Golden Retriever",
+    "scientific": "Canis lupus familiaris",
+    "file": "golden-retriever.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Labrador Retriever",
+    "scientific": "Canis lupus familiaris",
+    "file": "labrador-retriever.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "English Cocker Spaniel",
+    "scientific": "Canis lupus familiaris",
+    "file": "english-cocker-spaniel.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Irish Setter",
+    "scientific": "Canis lupus familiaris",
+    "file": "irish-setter.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Weimaraner",
+    "scientific": "Canis lupus familiaris",
+    "file": "weimaraner.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Vizsla",
+    "scientific": "Canis lupus familiaris",
+    "file": "vizsla.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Brittany",
+    "scientific": "Canis lupus familiaris",
+    "file": "brittany.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "German Shorthaired Pointer",
+    "scientific": "Canis lupus familiaris",
+    "file": "german-shorthaired-pointer.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "English Springer Spaniel",
+    "scientific": "Canis lupus familiaris",
+    "file": "english-springer-spaniel.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Chesapeake Bay Retriever",
+    "scientific": "Canis lupus familiaris",
+    "file": "chesapeake-bay-retriever.jpg",
+    "group": "Sporting"
+  },
+  {
+    "name": "Beagle",
+    "scientific": "Canis lupus familiaris",
+    "file": "beagle.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Basset Hound",
+    "scientific": "Canis lupus familiaris",
+    "file": "basset-hound.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Bloodhound",
+    "scientific": "Canis lupus familiaris",
+    "file": "bloodhound.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Greyhound",
+    "scientific": "Canis lupus familiaris",
+    "file": "greyhound.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Afghan Hound",
+    "scientific": "Canis lupus familiaris",
+    "file": "afghan-hound.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Borzoi",
+    "scientific": "Canis lupus familiaris",
+    "file": "borzoi.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Dachshund",
+    "scientific": "Canis lupus familiaris",
+    "file": "dachshund.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Rhodesian Ridgeback",
+    "scientific": "Canis lupus familiaris",
+    "file": "rhodesian-ridgeback.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Whippet",
+    "scientific": "Canis lupus familiaris",
+    "file": "whippet.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Saluki",
+    "scientific": "Canis lupus familiaris",
+    "file": "saluki.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Irish Wolfhound",
+    "scientific": "Canis lupus familiaris",
+    "file": "irish-wolfhound.jpg",
+    "group": "Hound"
+  },
+  {
+    "name": "Boxer",
+    "scientific": "Canis lupus familiaris",
+    "file": "boxer.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Great Dane",
+    "scientific": "Canis lupus familiaris",
+    "file": "great-dane.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Rottweiler",
+    "scientific": "Canis lupus familiaris",
+    "file": "rottweiler.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Dobermann",
+    "scientific": "Canis lupus familiaris",
+    "file": "dobermann.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Siberian Husky",
+    "scientific": "Canis lupus familiaris",
+    "file": "siberian-husky.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Alaskan Malamute",
+    "scientific": "Canis lupus familiaris",
+    "file": "alaskan-malamute.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Bernese Mountain Dog",
+    "scientific": "Canis lupus familiaris",
+    "file": "bernese-mountain-dog.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Saint Bernard",
+    "scientific": "Canis lupus familiaris",
+    "file": "saint-bernard.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Akita",
+    "scientific": "Canis lupus familiaris",
+    "file": "akita.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Samoyed",
+    "scientific": "Canis lupus familiaris",
+    "file": "samoyed.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Bullmastiff",
+    "scientific": "Canis lupus familiaris",
+    "file": "bullmastiff.jpg",
+    "group": "Working"
+  },
+  {
+    "name": "Jack Russell Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "jack-russell-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Yorkshire Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "yorkshire-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Bull Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "bull-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Scottish Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "scottish-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Airedale Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "airedale-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Cairn Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "cairn-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Border Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "border-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Staffordshire Bull Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "staffordshire-bull-terrier.jpg",
+    "group": "Terrier"
+  },
+  {
+    "name": "Chihuahua",
+    "scientific": "Canis lupus familiaris",
+    "file": "chihuahua.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Pomeranian",
+    "scientific": "Canis lupus familiaris",
+    "file": "pomeranian.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Shih Tzu",
+    "scientific": "Canis lupus familiaris",
+    "file": "shih-tzu.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Cavalier King Charles Spaniel",
+    "scientific": "Canis lupus familiaris",
+    "file": "cavalier-king-charles-spaniel.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Maltese",
+    "scientific": "Canis lupus familiaris",
+    "file": "maltese.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Pug",
+    "scientific": "Canis lupus familiaris",
+    "file": "pug.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Papillon",
+    "scientific": "Canis lupus familiaris",
+    "file": "papillon.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Pekingese",
+    "scientific": "Canis lupus familiaris",
+    "file": "pekingese.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Italian Greyhound",
+    "scientific": "Canis lupus familiaris",
+    "file": "italian-greyhound.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Havanese",
+    "scientific": "Canis lupus familiaris",
+    "file": "havanese.jpg",
+    "group": "Toy"
+  },
+  {
+    "name": "Bulldog",
+    "scientific": "Canis lupus familiaris",
+    "file": "bulldog.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Poodle",
+    "scientific": "Canis lupus familiaris",
+    "file": "poodle.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Dalmatian",
+    "scientific": "Canis lupus familiaris",
+    "file": "dalmatian.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Chow Chow",
+    "scientific": "Canis lupus familiaris",
+    "file": "chow-chow.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Shar Pei",
+    "scientific": "Canis lupus familiaris",
+    "file": "shar-pei.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Bichon Frise",
+    "scientific": "Canis lupus familiaris",
+    "file": "bichon-frise.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Keeshond",
+    "scientific": "Canis lupus familiaris",
+    "file": "keeshond.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Lhasa Apso",
+    "scientific": "Canis lupus familiaris",
+    "file": "lhasa-apso.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Shiba Inu",
+    "scientific": "Canis lupus familiaris",
+    "file": "shiba-inu.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "French Bulldog",
+    "scientific": "Canis lupus familiaris",
+    "file": "french-bulldog.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "Boston Terrier",
+    "scientific": "Canis lupus familiaris",
+    "file": "boston-terrier.jpg",
+    "group": "Non-Sporting"
+  },
+  {
+    "name": "German Shepherd",
+    "scientific": "Canis lupus familiaris",
+    "file": "german-shepherd.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Border Collie",
+    "scientific": "Canis lupus familiaris",
+    "file": "border-collie.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Australian Shepherd",
+    "scientific": "Canis lupus familiaris",
+    "file": "australian-shepherd.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Pembroke Welsh Corgi",
+    "scientific": "Canis lupus familiaris",
+    "file": "pembroke-welsh-corgi.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Cardigan Welsh Corgi",
+    "scientific": "Canis lupus familiaris",
+    "file": "cardigan-welsh-corgi.png",
+    "group": "Herding"
+  },
+  {
+    "name": "Shetland Sheepdog",
+    "scientific": "Canis lupus familiaris",
+    "file": "shetland-sheepdog.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Old English Sheepdog",
+    "scientific": "Canis lupus familiaris",
+    "file": "old-english-sheepdog.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Belgian Shepherd",
+    "scientific": "Canis lupus familiaris",
+    "file": "belgian-shepherd.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Rough Collie",
+    "scientific": "Canis lupus familiaris",
+    "file": "rough-collie.jpg",
+    "group": "Herding"
+  },
+  {
+    "name": "Australian Cattle Dog",
+    "scientific": "Canis lupus familiaris",
+    "file": "australian-cattle-dog.jpg",
+    "group": "Herding"
+  }
+]

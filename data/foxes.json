@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Ethiopian Wolf",
+    "scientific": "Canis simensis",
+    "file": "ethiopian-wolf.jpg",
+    "group": "Canis"
+  },
+  {
+    "name": "Crab-eating Fox",
+    "scientific": "Cerdocyon thous",
+    "file": "crab-eating-fox.jpg",
+    "group": "Cerdocyon"
+  },
+  {
+    "name": "Falkland Islands Wolf",
+    "scientific": "Dusicyon australis",
+    "file": "falkland-islands-wolf.jpg",
+    "group": "Dusicyon"
+  },
+  {
+    "name": "Culpeo",
+    "scientific": "Lycalopex culpaeus",
+    "file": "culpeo.jpg",
+    "group": "Lycalopex"
+  },
+  {
+    "name": "Darwin's Fox",
+    "scientific": "Lycalopex fulvipes",
+    "file": "darwins-fox.jpg",
+    "group": "Lycalopex"
+  },
+  {
+    "name": "South American Gray Fox",
+    "scientific": "Lycalopex griseus",
+    "file": "south-american-gray-fox.jpg",
+    "group": "Lycalopex"
+  },
+  {
+    "name": "Pampas Fox",
+    "scientific": "Lycalopex gymnocercus",
+    "file": "pampas-fox.jpg",
+    "group": "Lycalopex"
+  },
+  {
+    "name": "Sechuran Fox",
+    "scientific": "Lycalopex sechurae",
+    "file": "sechuran-fox.jpg",
+    "group": "Lycalopex"
+  },
+  {
+    "name": "Hoary Fox",
+    "scientific": "Lycalopex vetulus",
+    "file": "hoary-fox.jpg",
+    "group": "Lycalopex"
+  },
+  {
+    "name": "Bat-eared Fox",
+    "scientific": "Otocyon megalotis",
+    "file": "bat-eared-fox.jpg",
+    "group": "Otocyon"
+  },
+  {
+    "name": "Gray Fox",
+    "scientific": "Urocyon cinereoargenteus",
+    "file": "gray-fox.jpg",
+    "group": "Urocyon"
+  },
+  {
+    "name": "Island Fox",
+    "scientific": "Urocyon littoralis",
+    "file": "island-fox.jpg",
+    "group": "Urocyon"
+  },
+  {
+    "name": "Arctic Fox",
+    "scientific": "Vulpes lagopus",
+    "file": "arctic-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Bengal Fox",
+    "scientific": "Vulpes bengalensis",
+    "file": "bengal-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Blanford's Fox",
+    "scientific": "Vulpes cana",
+    "file": "blanfords-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Cape Fox",
+    "scientific": "Vulpes chama",
+    "file": "cape-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Corsac Fox",
+    "scientific": "Vulpes corsac",
+    "file": "corsac-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Fennec Fox",
+    "scientific": "Vulpes zerda",
+    "file": "fennec-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Kit Fox",
+    "scientific": "Vulpes macrotis",
+    "file": "kit-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Pale Fox",
+    "scientific": "Vulpes pallida",
+    "file": "pale-fox.png",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Rüppell's Fox",
+    "scientific": "Vulpes rueppellii",
+    "file": "rppells-fox.jpg",
+    "group": "Vulpes"
+  },
+  {
+    "name": "Red Fox",
+    "scientific": "Vulpes vulpes",
+    "file": "red-fox.jpg",
+    "group": "Vulpes"
+  }
+]

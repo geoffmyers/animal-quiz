@@ -1,0 +1,8 @@
+{
+  "_comment": "Settings for tools/render-credits.py: the page title, colours and the paragraph above the credits table.",
+  "title": "Animal Identification Quiz",
+  "description": "Source file, author and licence of every animal photo in the Animal Identification Quiz.",
+  "intro": "Every photo in this quiz comes from Wikimedia Commons or English Wikipedia and is used under the licence its author chose. Each is listed here with its source file, its author as the file page names them, and that licence.",
+  "background": "#0a0a0f",
+  "accent": "#fbbf24"
+}

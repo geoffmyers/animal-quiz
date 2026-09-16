@@ -1,0 +1,284 @@
+[
+  {
+    "name": "Abyssinian",
+    "scientific": "Felis catus",
+    "file": "abyssinian.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "American Shorthair",
+    "scientific": "Felis catus",
+    "file": "american-shorthair.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "British Shorthair",
+    "scientific": "Felis catus",
+    "file": "british-shorthair.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Burmese",
+    "scientific": "Felis catus",
+    "file": "burmese.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "European Shorthair",
+    "scientific": "Felis catus",
+    "file": "european-shorthair.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Havana Brown",
+    "scientific": "Felis catus",
+    "file": "havana-brown.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Manx",
+    "scientific": "Felis catus",
+    "file": "manx.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Snowshoe",
+    "scientific": "Felis catus",
+    "file": "snowshoe.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Singapura",
+    "scientific": "Felis catus",
+    "file": "singapura.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Bombay",
+    "scientific": "Felis catus",
+    "file": "bombay.jpg",
+    "group": "Shorthair"
+  },
+  {
+    "name": "Birman",
+    "scientific": "Felis catus",
+    "file": "birman.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Himalayan",
+    "scientific": "Felis catus",
+    "file": "himalayan.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Maine Coon",
+    "scientific": "Felis catus",
+    "file": "maine-coon.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Norwegian Forest Cat",
+    "scientific": "Felis catus",
+    "file": "norwegian-forest-cat.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Persian",
+    "scientific": "Felis catus",
+    "file": "persian.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Siberian",
+    "scientific": "Felis catus",
+    "file": "siberian.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Somali",
+    "scientific": "Felis catus",
+    "file": "somali.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Turkish Angora",
+    "scientific": "Felis catus",
+    "file": "turkish-angora.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Nebelung",
+    "scientific": "Felis catus",
+    "file": "nebelung.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "York Chocolate",
+    "scientific": "Felis catus",
+    "file": "york-chocolate.jpg",
+    "group": "Longhair"
+  },
+  {
+    "name": "Siamese",
+    "scientific": "Felis catus",
+    "file": "siamese.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Balinese",
+    "scientific": "Felis catus",
+    "file": "balinese.png",
+    "group": "Oriental"
+  },
+  {
+    "name": "Oriental Shorthair",
+    "scientific": "Felis catus",
+    "file": "oriental-shorthair.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Oriental Longhair",
+    "scientific": "Felis catus",
+    "file": "oriental-longhair.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Tonkinese",
+    "scientific": "Felis catus",
+    "file": "tonkinese.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Thai",
+    "scientific": "Felis catus",
+    "file": "thai.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Burmilla",
+    "scientific": "Felis catus",
+    "file": "burmilla.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Colorpoint Shorthair",
+    "scientific": "Felis catus",
+    "file": "colorpoint-shorthair.jpg",
+    "group": "Oriental"
+  },
+  {
+    "name": "Bengal",
+    "scientific": "Felis catus",
+    "file": "bengal.jpg",
+    "group": "Wild-looking"
+  },
+  {
+    "name": "Savannah",
+    "scientific": "Felis catus",
+    "file": "savannah.jpg",
+    "group": "Wild-looking"
+  },
+  {
+    "name": "Egyptian Mau",
+    "scientific": "Felis catus",
+    "file": "egyptian-mau.jpg",
+    "group": "Wild-looking"
+  },
+  {
+    "name": "Pixie-bob",
+    "scientific": "Felis catus",
+    "file": "pixie-bob.jpg",
+    "group": "Wild-looking"
+  },
+  {
+    "name": "Chausie",
+    "scientific": "Felis catus",
+    "file": "chausie.jpg",
+    "group": "Wild-looking"
+  },
+  {
+    "name": "Serengeti",
+    "scientific": "Felis catus",
+    "file": "serengeti.jpg",
+    "group": "Wild-looking"
+  },
+  {
+    "name": "Sphynx",
+    "scientific": "Felis catus",
+    "file": "sphynx.jpg",
+    "group": "Rex & Hairless"
+  },
+  {
+    "name": "Devon Rex",
+    "scientific": "Felis catus",
+    "file": "devon-rex.jpg",
+    "group": "Rex & Hairless"
+  },
+  {
+    "name": "Cornish Rex",
+    "scientific": "Felis catus",
+    "file": "cornish-rex.jpg",
+    "group": "Rex & Hairless"
+  },
+  {
+    "name": "Peterbald",
+    "scientific": "Felis catus",
+    "file": "peterbald.jpg",
+    "group": "Rex & Hairless"
+  },
+  {
+    "name": "LaPerm",
+    "scientific": "Felis catus",
+    "file": "laperm.jpg",
+    "group": "Rex & Hairless"
+  },
+  {
+    "name": "Lykoi",
+    "scientific": "Felis catus",
+    "file": "lykoi.jpg",
+    "group": "Rex & Hairless"
+  },
+  {
+    "name": "Scottish Fold",
+    "scientific": "Felis catus",
+    "file": "scottish-fold.png",
+    "group": "Distinctive"
+  },
+  {
+    "name": "Munchkin",
+    "scientific": "Felis catus",
+    "file": "munchkin.jpg",
+    "group": "Distinctive"
+  },
+  {
+    "name": "American Curl",
+    "scientific": "Felis catus",
+    "file": "american-curl.jpg",
+    "group": "Distinctive"
+  },
+  {
+    "name": "Japanese Bobtail",
+    "scientific": "Felis catus",
+    "file": "japanese-bobtail.jpg",
+    "group": "Distinctive"
+  },
+  {
+    "name": "Khao Manee",
+    "scientific": "Felis catus",
+    "file": "khao-manee.jpg",
+    "group": "Distinctive"
+  },
+  {
+    "name": "American Bobtail",
+    "scientific": "Felis catus",
+    "file": "american-bobtail.jpg",
+    "group": "Distinctive"
+  },
+  {
+    "name": "Selkirk Rex",
+    "scientific": "Felis catus",
+    "file": "selkirk-rex.jpg",
+    "group": "Distinctive"
+  }
+]
