@@ -7,12 +7,18 @@ credits file into the page the site links to and the Markdown the repository
 shows, so the two can never disagree.
 
     python3 tools/render-credits.py          # from the repository root
+    python3 tools/render-credits.py --check  # exit 1 if either file is out of date
+
+CREDITS.md keeps a YAML front-matter block only if it already has one: the
+development copy carries one for its tooling, and the published copy has it
+stripped, so rendering either one leaves nothing to commit.
 """
 from __future__ import annotations
-import html, json, pathlib, sys
+import html, json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = json.loads((ROOT / "tools" / "credits-page.json").read_text())
+FRONT_MATTER = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n+", re.S)
 
 
 def md(text: str) -> str:
@@ -40,12 +46,13 @@ def main() -> int:
         f"| [`{i['file']}`](images/{i['file']}) | [{md(i['source'].removeprefix('File:'))}]({i['source_url']}) "
         f"| {md(i['author']) or '—'} | {licence_md(i)} |"
         for i in images)
-    (ROOT / "CREDITS.md").write_text(f"""---
+    front_matter = f"""---
 title: Image credits
 description: {SITE['description']}
 ---
 
-# Image credits
+"""
+    credits_md = f"""# Image credits
 
 {SITE['intro']}
 
@@ -55,14 +62,14 @@ This file is generated from `data/image-credits.json` by
 | Image | Source file | Author | Licence |
 |---|---|---|---|
 {rows_md}
-""")
+"""
 
     rows_html = "\n".join(
         f"<tr><td>{html.escape(i['file'])}</td>"
         f"<td><a href=\"{html.escape(i['source_url'])}\">{html.escape(i['source'].removeprefix('File:'))}</a></td>"
         f"<td>{html.escape(i['author']) or '—'}</td><td>{licence_html(i)}</td></tr>"
         for i in images)
-    (ROOT / "credits.html").write_text(f"""<!DOCTYPE html>
+    credits_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -95,7 +102,26 @@ This file is generated from `data/image-credits.json` by
 </main>
 </body>
 </html>
-""")
+"""
+
+    md_path, html_path = ROOT / "CREDITS.md", ROOT / "credits.html"
+    md_now = md_path.read_text() if md_path.exists() else None
+    html_now = html_path.read_text() if html_path.exists() else None
+    if "--check" in sys.argv[1:]:
+        stale = []
+        if md_now is None or FRONT_MATTER.sub("", md_now, count=1) != credits_md:
+            stale.append("CREDITS.md")
+        if html_now != credits_html:
+            stale.append("credits.html")
+        if stale:
+            print(f"out of date: {', '.join(stale)} (run tools/render-credits.py)", file=sys.stderr)
+            return 1
+        print(f"{len(images)} credits, CREDITS.md and credits.html are current")
+        return 0
+
+    keep_front_matter = md_now is None or bool(FRONT_MATTER.match(md_now))
+    md_path.write_text((front_matter if keep_front_matter else "") + credits_md)
+    html_path.write_text(credits_html)
     print(f"{len(images)} credits -> CREDITS.md, credits.html")
     return 0
 

@@ -18,9 +18,26 @@ Then open <http://localhost:8000>. Any static file server works.
 
 ## Checks
 
-There is no automated test suite. Before pushing, serve the site and play
-one round in each category (foxes, cats, dogs), checking that every image
-loads and the results screen appears.
+<!-- CHECKS:START -->
+Every push and pull request runs these checks in GitHub Actions
+([`.github/workflows/checks.yml`](.github/workflows/checks.yml)), and every release has passed them.
+To run one yourself, use the same commands from the directory shown.
+
+**site** (Node.js 22, from the repository root):
+
+Every local file a page refers to exists, every script (inline or not) parses, and the Worker configuration deploys in a dry run with `npx wrangler@4 deploy --dry-run`; the script is in the workflow.
+
+**credits are current** (Python 3.12, from the repository root):
+
+```bash
+python tools/render-credits.py --check
+```
+
+<!-- CHECKS:END -->
+
+The checks cannot play the quiz, so before pushing also serve the site and play
+one round in each category (foxes, cats, dogs), checking that every image loads
+and the results screen appears.
 
 ## Before you open a pull request
 
