@@ -92,6 +92,10 @@
   .mode-card .mode-name { font-weight: 700; font-size: 1rem; margin-bottom: 0.25rem; }
   .mode-card .mode-desc { font-size: 0.8rem; color: #888; }
 
+  .category-card:focus-visible, .mode-card:focus-visible {
+    outline: 2px solid #f97316; outline-offset: 2px;
+  }
+
   .start-btn {
     background: linear-gradient(135deg, #f97316, #ea580c);
     color: #fff;
@@ -109,8 +113,13 @@
 
   .species-count { color: #666; font-size: 0.85rem; margin-bottom: 2rem; }
 
-  .footer-credits { color: #4a4a5a; font-size: 0.75rem; margin-top: 2rem; letter-spacing: 0.03em; line-height: 1.8; text-align: center; }
-  .footer-credits a { color: #4a4a5a; text-decoration: underline; }
+  /* #80808f on the #0a0a0f page background is ~5.1:1 — the licences these
+     credits satisfy require attribution to actually be readable (AA is
+     4.5:1 for this text size; the previous #4a4a5a was ~2.3:1). */
+  .footer-credits { color: #80808f; font-size: 0.75rem; margin-top: 2rem; letter-spacing: 0.03em; line-height: 1.8; text-align: center; }
+  .footer-credits a { color: #80808f; text-decoration: underline; }
+  .footer-credits .gh-link { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; }
+  .footer-credits .gh-link svg { flex-shrink: 0; }
 
   /* --- Quiz Screen --- */
   #quiz-screen { display: none; }

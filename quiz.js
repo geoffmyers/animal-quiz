@@ -169,14 +169,32 @@
     $loadingOverlay.classList.add('hidden');
   }
 
+  // Cards use role="button" tabindex="0" rather than <button> (they hold
+  // block-level icon/name/count children), so Enter/Space have to be wired
+  // up by hand to match native button behaviour. stopPropagation() is load-
+  // bearing: the document-level keydown listener below treats any
+  // unconsumed Enter on the start screen as "start the quiz", so without it
+  // pressing Enter to select a card also immediately starts the quiz.
+  function makeKeyboardActivatable(el) {
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+        e.preventDefault();
+        e.stopPropagation();
+        el.click();
+      }
+    });
+  }
+
   // --- Category selection ---
   categoryCards.forEach(function(card) {
+    makeKeyboardActivatable(card);
     card.addEventListener('click', function() {
       var cat = card.dataset.category;
       if (cat === selectedCategory) return;
 
-      categoryCards.forEach(function(c) { c.classList.remove('selected'); });
+      categoryCards.forEach(function(c) { c.classList.remove('selected'); c.setAttribute('aria-pressed', 'false'); });
       card.classList.add('selected');
+      card.setAttribute('aria-pressed', 'true');
       selectedCategory = cat;
 
       loadCategoryData(function() {
@@ -187,9 +205,11 @@
 
   // --- Mode selection ---
   modeCards.forEach(function(card) {
+    makeKeyboardActivatable(card);
     card.addEventListener('click', function() {
-      modeCards.forEach(function(c) { c.classList.remove('selected'); });
+      modeCards.forEach(function(c) { c.classList.remove('selected'); c.setAttribute('aria-pressed', 'false'); });
       card.classList.add('selected');
+      card.setAttribute('aria-pressed', 'true');
       quizMode = parseInt(card.dataset.mode);
     });
   });

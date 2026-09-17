@@ -20,38 +20,38 @@
   <p class="subtitle" id="subtitle">Can you identify these animals from around the world?</p>
 
   <div class="category-cards">
-    <div class="category-card selected" data-category="foxes">
-      <div class="category-icon">&#129418;</div>
+    <div class="category-card selected" data-category="foxes" role="button" tabindex="0" aria-pressed="true">
+      <div class="category-icon" aria-hidden="true">&#129418;</div>
       <div class="category-name">Foxes</div>
-      <div class="category-count" id="cat-count-foxes">24 species</div>
+      <div class="category-count" id="cat-count-foxes">22 species</div>
     </div>
-    <div class="category-card" data-category="cats">
-      <div class="category-icon">&#128049;</div>
+    <div class="category-card" data-category="cats" role="button" tabindex="0" aria-pressed="false">
+      <div class="category-icon" aria-hidden="true">&#128049;</div>
       <div class="category-name">Cats</div>
-      <div class="category-count" id="cat-count-cats">55 breeds</div>
+      <div class="category-count" id="cat-count-cats">47 breeds</div>
     </div>
-    <div class="category-card" data-category="dogs">
-      <div class="category-icon">&#128054;</div>
+    <div class="category-card" data-category="dogs" role="button" tabindex="0" aria-pressed="false">
+      <div class="category-icon" aria-hidden="true">&#128054;</div>
       <div class="category-name">Dogs</div>
-      <div class="category-count" id="cat-count-dogs">73 breeds</div>
+      <div class="category-count" id="cat-count-dogs">71 breeds</div>
     </div>
   </div>
 
   <p class="species-count" id="species-count"></p>
 
   <div class="mode-cards">
-    <div class="mode-card selected" data-mode="8">
-      <div class="mode-icon">&#128065;</div>
+    <div class="mode-card selected" data-mode="8" role="button" tabindex="0" aria-pressed="true">
+      <div class="mode-icon" aria-hidden="true">&#128065;</div>
       <div class="mode-name">Quick Sighting</div>
       <div class="mode-desc">8 questions</div>
     </div>
-    <div class="mode-card" data-mode="16">
-      <div class="mode-icon">&#128270;</div>
+    <div class="mode-card" data-mode="16" role="button" tabindex="0" aria-pressed="false">
+      <div class="mode-icon" aria-hidden="true">&#128270;</div>
       <div class="mode-name">Field Study</div>
       <div class="mode-desc">16 questions</div>
     </div>
-    <div class="mode-card" data-mode="0">
-      <div class="mode-icon">&#128218;</div>
+    <div class="mode-card" data-mode="0" role="button" tabindex="0" aria-pressed="false">
+      <div class="mode-icon" aria-hidden="true">&#128218;</div>
       <div class="mode-name">Full Taxonomy</div>
       <div class="mode-desc" id="full-tax-desc">All species</div>
     </div>
@@ -62,19 +62,23 @@
   <div class="footer-credits">
     Photos from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia</a> by many photographers, under their own licences &middot; <a href="credits.html">Image credits</a><br>
     Type set in <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener">Inter</a> &middot; SIL Open Font License<br>
-    Quiz by <a href="https://www.geoffmyers.com" target="_blank">Geoff Myers</a> &middot; built with plain HTML, CSS and JavaScript
+    Quiz by <a href="https://www.geoffmyers.com" target="_blank">Geoff Myers</a> &middot; built with plain HTML, CSS and JavaScript<br>
+    <a class="gh-link" href="https://github.com/geoffmyers/animal-quiz" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+      <span>View source on GitHub</span>
+    </a>
   </div>
 </div>
 
 <!-- QUIZ SCREEN -->
 <div id="quiz-screen">
   <div class="top-bar">
-    <div class="score-display">
+    <div class="score-display" aria-live="polite">
       <span class="correct" id="score-correct">0</span>
       <span class="wrong" id="score-wrong">0</span>
       <span class="streak" id="score-streak">&#128293; 0</span>
     </div>
-    <div class="progress-text" id="progress-text">1 / 8</div>
+    <div class="progress-text" id="progress-text" aria-live="polite">1 / 8</div>
     <button class="quit-btn" id="quit-btn">Quit</button>
   </div>
 
@@ -92,8 +96,8 @@
 
     <div class="choices" id="choices"></div>
 
-    <div class="feedback" id="feedback"></div>
-    <div class="feedback-detail" id="feedback-detail"></div>
+    <div class="feedback" id="feedback" aria-live="polite" aria-atomic="true"></div>
+    <div class="feedback-detail" id="feedback-detail" aria-live="polite"></div>
 
     <div class="next-container" id="next-container"></div>
 
